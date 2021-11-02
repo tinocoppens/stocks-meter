@@ -76,9 +76,9 @@ import time
 import json
 while True:
     time.sleep(5)
-    aankoopprijs = 49.19
+    aankoopprijs = "Buy price"
     lasttime = aankoopprijs
-    ALL = finnhub_client.quote('INTC')
+    ALL = finnhub_client.quote('STOCK')
     ABG = str(ALL)
     mytext = ABG
     mytext = mytext.replace("'", '"')
